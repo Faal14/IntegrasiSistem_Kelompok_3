@@ -3,8 +3,16 @@ body {
   background: #f6f8fd;
 }
 
+/* Heading pakai font racing */
+h1, h2, h3, h4, h5 {
+  font-family: 'Orbitron', Raleway, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar: putih polos + aksen Honda Racing Red */
 .bg-nav {
-  background-color: #f6f8fd;
+  background-color: #ffffff;
+  border-top: 4px solid #E60012;
 }
 
 .mt--2 {
@@ -16,15 +24,22 @@ body {
   opacity: .25;
 }
 
+.navbar-brand span {
+  font-family: 'Orbitron', Raleway, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Font menu dikecilkan jadi 14px agar muat 1 baris */
 .navbar-light .navbar-nav .nav-link {
   color: #212529 !important;
-  font-size: 16px;
+  font-size: 14px; /* Dikecilkan dari 16px */
   font-weight: 600;
   transition: all 0.4s;
+  white-space: nowrap; 
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #0d6efd !important;
+  color: #E60012 !important;
 }
 
 .feature-icon-1 {
@@ -54,11 +69,32 @@ body {
 
 .btn-social-media:hover {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #E60012;
+  border-color: #E60012;
 }
 
-/* Footer */
+/* Gambar hero: frame racing + glow merah */
+.hero-img {
+  border-radius: 1rem;
+  border: 3px solid #E60012;
+  box-shadow: 0 18px 40px rgba(230, 0, 18, 0.22);
+}
+
+/* CTA Hero: aksen Repsol Orange */
+.btn-primary {
+  background-color: #FF6600;
+  border-color: #FF6600;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #e65c00;
+  border-color: #e65c00;
+  color: #fff;
+}
+
+/* Footer (dibiarkan sesuai permintaan) */
 .footer .copyright a {
   color: #ee5050;
   text-decoration: none;
